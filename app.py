@@ -1,7 +1,7 @@
 """
 app.py
 ------
-Streamlit front-end for the Startup Fit Screener.
+Streamlit front-end for the Founderlens.
 
 Flow:
   1. User enters a startup name (+ optional description they already know,
@@ -26,7 +26,7 @@ import streamlit as st
 from agent_core import build_agent, run_assessment
 from history_store import load_history, save_entry, clear_history
 
-st.set_page_config(page_title="Startup Fit Screener", page_icon="🔍", layout="centered")
+st.set_page_config(page_title="Founderlens", page_icon="🔍", layout="centered")
 
 
 def get_agent():
@@ -68,10 +68,10 @@ with st.sidebar:
         st.rerun()
 
 
-st.title("🔍 Startup Fit Screener")
+st.title("Founderlens")
 st.write(
-    "Enter a startup name to get a structured profile — founder background, "
-    "business category (AI/SaaS/B2B/etc.), and GTM maturity — synthesized "
+    "Enter a startup name to get a structured profile, founder background, "
+    "business category (AI/SaaS/B2B/etc.), and GTM maturity, synthesized "
     "from live web search. Optionally add your investor thesis or ICP "
     "criteria to get an explicit fit verdict."
 )
