@@ -26,7 +26,7 @@ import streamlit as st
 from agent_core import build_agent, run_assessment
 from history_store import load_history, save_entry, clear_history
 
-st.set_page_config(page_title="Founderlens", page_icon="🔍", layout="centered")
+st.set_page_config(page_title="Founderlens", layout="centered")
 
 
 def get_agent():
